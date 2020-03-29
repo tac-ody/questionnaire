@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>アンケート入力</title>
+  <link rel="stylesheet" type="text/css" href="test20200124.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <form action="testresult.php" method="POST" target="_blank">
+    <div id="header">
+      <h1>社内セミナーアンケート</h1>
+    </div>
+    <br>
+    <div id="headerId">
+      部署
+      <select class="box" name="busyo">
+        <option value="">▼選択してください</option>
+        <option value="営業部">営業部</option>
+        <option value="開発部">開発部</option>
+        <option value="総務部">総務部</option>
+      </select>
+      氏名
+      <input type="text" class="box" name="name" placeholder="氏名を入力してください">
+    </div>
+    <br><br>
+    <div id="seminarType">
+      セミナーを選択してください
+      <select class="box" class="seminarType" name="seminarType">
+        <option value="">▼選択してください</option>
+        <option value="1">1.Java基本</option>
+        <option value="2">2.Java中級</option>
+        <option value="3">3.HTML5/CSS3講座</option>
+        <option value="4">4.管理会計の基礎</option>
+        <option value="5">5.SEの人間力</option>
+        <option value="6">6.SEのマネージメント</option>
+      </select>
+    </div>
+    <br><br><br>
+    <div id="contents">
+      <div id="question1">
+        <h2>受講されたセミナーを評価してみてください</h2>
+        <input type="radio" class="seminarEvaluation" name="seminarEvaluation" value="選択肢1" checked required>1.とても良かった
+        <input type="radio" class="seminarEvaluation" name="seminarEvaluation" value="選択肢2">2.良かった
+        <input type="radio" class="seminarEvaluation" name="seminarEvaluation" value="選択肢3">3.普通
+        <input type="radio" class="seminarEvaluation" name="seminarEvaluation" value="選択肢4">4.あまり良くなかった
+        <input type="radio" class="seminarEvaluation" name="seminarEvaluation" value="選択肢5">5.良くなかった
+      </div>
+      <br><br>
+      <div id="question2">
+        <h2>このセミナーを受講された、動機またはきっかけは？</h2>
+        <input type="checkbox" class="seminarTrigger" name="seminarTrigger[]" value="1.上司に命じられて">1.上司に命じられて
+        <input type="checkbox" class="seminarTrigger" name="seminarTrigger[]" value="2.自己研鑽のために">2.自己研鑽のために
+        <input type="checkbox" class="seminarTrigger" name="seminarTrigger[]" value="3.現在の業務で必要">3.現在の業務で必要
+        <input type="checkbox" class="seminarTrigger" name="seminarTrigger[]" value="4.将来の業務で必要">4.将来の業務で必要
+        <input type="checkbox" class="seminarTrigger" name="seminarTrigger[]" value="5.講師が有名人だから">5.講師が有名人だから
+        <input type="checkbox" class="seminarTrigger" name="seminarTrigger[]" value="6.前回出席してとても良かったから">6.前回出席してとても良かったから
+      </div>
+      <br><br>
+      <div id="question3">
+        <h2>今後のセミナー企画へのご要望をお書きください</h2>
+        <textarea name="seminarRequest" rows="5" maxlength="256" placeholder="記入任意 ※全角256文字まで"></textarea>
+      </div>
+    </div>
+    <div id="footer">
+      <button type="submit" id="submit-box">確認</button>
+    </div>
+  </form>
+  <script type="text/javascript" src="test20200124.js"></script>
+</body>
+</html>

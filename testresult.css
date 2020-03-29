@@ -1,0 +1,62 @@
+body {
+    background-color: #99CCCC;
+    text-align: left;
+    margin: 0px auto;
+    width: 950px;
+}
+#header {
+    font-size: 20px;
+}
+#date {
+    font-size: 16px;
+    font-weight: bold;
+}
+#headerId {
+    font-size: 16px;
+    font-weight: bold;
+}
+#headerSeminarType {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 390px;
+}
+#question1, #question2, #question3 {
+    border: 1px dotted #000000;
+    padding: 10px 0 20px 15px;
+}
+#dateBox {
+    height: 25px;
+    width: 130px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-right: 460px;
+}
+.box {
+    height: 25px;
+    width: 240px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+h2 {
+    font-size: 17px;
+}
+textarea {
+    width: 65%;
+    border-radius: 4px;
+}
+#footer {
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+#cancel-box, #submit-box {
+    width: 120px;
+    height: 35px;
+    float: right;
+    font-weight: bold;
+    margin-right: 30px;
+    border: solid 1px black;
+    border-radius: 8px;
+    background: linear-gradient(#EEEEEE, #AAAAAA);
+}
